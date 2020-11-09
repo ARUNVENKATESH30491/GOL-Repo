@@ -10,7 +10,7 @@ checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleC
 stage('Artifacte creation')
 {
 steps{
-sh 'clean package'
+echo "clean "
 }
 }
 stage('publish test result')
